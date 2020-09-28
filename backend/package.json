@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend do clone do Orkut em React",
+  "main": "/dist/bin/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pazfelipe/react-orkut-clone.git"
+  },
+  "keywords": [
+    "Orkut",
+    "react",
+    "clone"
+  ],
+  "author": "Felipe Paz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pazfelipe/react-orkut-clone/issues"
+  },
+  "homepage": "https://github.com/pazfelipe/react-orkut-clone#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "socket.io": "^2.3.0"
+  }
+}

@@ -1,0 +1,32 @@
+.card {
+  border-radius: 4px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+.card .card-section {
+  border-radius: 4px;
+}
+
+.row {
+  display: block;
+  width: 100%;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
