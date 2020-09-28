@@ -1,3 +1,18 @@
+:root {
+  --blue: #D9E6F7;
+  --blue-2: #7091BD;
+  --blue-3: #64a7ffdb;
+  --blue-4: #518DCD;
+  --blue-5: #23527C;
+  --blue-light: #F0F7FF;
+  --white: #FFFFFF;
+  --red-13: #FE47A1;
+  --grey: #585858;
+  --grey-1: #cacaca;
+  --grey-2: #bebebe;
+}
+
+
 .card {
   border-radius: 4px;
   position: relative;
@@ -29,4 +44,35 @@ h6 {
 
 li {
   list-style: none;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs li {
+  list-style: none;
+  padding-right: 5px;
+  position: relative;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--blue-2);
+  min-width: 45px;
+  position: relative;
+}
+
+.breadcrumbs li.last-item {
+  color: grey;
+  margin-left: 5px;
+}
+
+.breadcrumbs li:not(.last-item) a::before {
+  content: '>';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--blue-2);
 }

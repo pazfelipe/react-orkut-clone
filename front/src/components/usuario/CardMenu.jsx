@@ -11,14 +11,16 @@ const CardTips = props => {
               <img src="/default.jpg" alt="Imagem do usuário" />
             </NavLink>
           </li>
+          <li className="separator no-bg"></li>
           <li>
             <NavLink to="/perfil">João da Silva</NavLink>
           </li>
-          <li>
-            <p>masculino</p>
-            <p>solteiro</p>
-            <p>Brasil</p>
+          <li className="resumo">
+            <span>masculino</span>
+            <span>solteiro</span>
+            <span>Brasil</span>
           </li>
+          <li className="separator"></li>
           <li>
             <ul>
               <li style={{
@@ -30,6 +32,7 @@ const CardTips = props => {
               </li>
             </ul>
           </li>
+          <li className="separator"></li>
           <li>
             <NavLink to="/recados">recados</NavLink>
           </li>
@@ -42,10 +45,12 @@ const CardTips = props => {
           <li>
             <NavLink to="/depoimentos">depoimentos</NavLink>
           </li>
-          <li>Apps</li>
+          <li className="separator"></li>
+          <li className="label">Apps</li>
           <li>
             <NavLink to="/apps">adicionar apps</NavLink>
           </li>
+          <li className="separator"></li>
           <li>
             <NavLink to="/listas">listas</NavLink>
           </li>
@@ -53,7 +58,7 @@ const CardTips = props => {
             <NavLink to="/atualizacoes">atualizações</NavLink>
           </li>
           <li>
-            <NavLink to="/minha-conta">configurações</NavLink>
+            <NavLink to="/configuracoes">configurações</NavLink>
           </li>
         </ul>
       </nav>
