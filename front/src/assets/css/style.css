@@ -8,6 +8,7 @@
   --white: #FFFFFF;
   --red-13: #FE47A1;
   --grey: #585858;
+  --grey-8: #292929;
   --grey-1: #cacaca;
   --grey-2: #bebebe;
 }
@@ -75,4 +76,19 @@ li {
   top: 0;
   right: 0;
   color: var(--blue-2);
+}
+
+a.btn {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+a.btn i {
+  margin-right: 5px;
+}
+
+a.btn.btn-primary {
+  background-color: var(--blue-5);
+  color: var(--white);
 }

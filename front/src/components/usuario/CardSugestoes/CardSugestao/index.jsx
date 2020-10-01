@@ -2,8 +2,8 @@ import React from 'react'
 
 const CardSugestoes = props => {
   return (
-    <div className="card user-sugestoes">
-      Sugestoes
+    <div className="user-sugestoes--container__sugetao">
+      {props.nome }
     </div>
   )
 }

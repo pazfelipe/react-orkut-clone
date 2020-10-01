@@ -6,7 +6,7 @@ import CardSugestoes from '../../components/usuario/CardSugestoes'
 import CardDepoimentos from '../../components/usuario/CardDepoimentos'
 
 export default class Home extends React.Component {
-  render() {
+  render () {
     return (
       <BasePage>
         <div className="main-content">
