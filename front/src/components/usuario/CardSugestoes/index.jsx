@@ -14,7 +14,10 @@ export default class CardSugestoes extends React.Component {
       { nome: 'Amarildo Josavildo' },
       { nome: 'Ingrid Olarina' },
     ],
-    bloqueado: false
+    bloqueado: false,
+    activeButtonRight: false,
+    activeButtonLeft: false,
+    scale: 0
   }
 
   renderItem = prop => <CardSugestao nome={ prop.nome } key={ prop.nome } />
@@ -23,7 +26,21 @@ export default class CardSugestoes extends React.Component {
     if (!this.state.bloqueado) return
     event.preventDefault()
 
-    console.warn('foi usado a bolinha do mouse')
+    this.setState({
+      scale: this.state.scale + event.deltaY * -0.01
+    })
+  }
+
+
+  onToggleLeft = () => {
+    this.setState({
+      activeButtonLeft: !this.state.activeButtonLeft
+    })
+  }
+  onToggleRight = () => {
+    this.setState({
+      activeButtonRight: !this.state.activeButtonRight
+    })
   }
 
   componentDidMount () {
@@ -36,10 +53,16 @@ export default class CardSugestoes extends React.Component {
         onMouseEnter={ () => this.setState({ bloqueado: true }) }
         onMouseLeave={ () => this.setState({ bloqueado: false }) }
       >
-        <div className="move move-left">
+        <div className={ this.state.activeButtonLeft ? 'move move-left active' : 'move move-left' }
+          onMouseDown={ this.onToggleLeft }
+          onMouseUp={ this.onToggleLeft }
+        >
           <IconButton icon="mdi-chevron-left" />
         </div>
-        <div className="move move-right">
+        <div className={ this.state.activeButtonRight ? 'move move-right active' : 'move move-right' }
+          onMouseDown={ this.onToggleRight }
+          onMouseUp={ this.onToggleRight }
+        >
           <IconButton icon="mdi-chevron-right" />
         </div>
         <p>Sugestões</p>

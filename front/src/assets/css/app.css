@@ -1,4 +1,5 @@
-@import url('./style.css');
+@import url("./style.css");
+
 body {
     margin: 0;
     padding: 0;
@@ -114,7 +115,7 @@ body {
 }
 
 .main-menu--container nav ul li ul li:not(:last-child) a::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 1px;
     height: 100%;
@@ -164,7 +165,7 @@ body {
     border-radius: 5px;
     left: 5%;
     font-size: 12px;
-    padding: 0 5px
+    padding: 0 5px;
 }
 
 .input-pesquisa button {
@@ -311,7 +312,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .2s linear;
+    transition: 0.2s linear;
+}
+
+.main-content--user .user-sugestoes .move button {
+    background-color: transparent;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.main-content--user .user-sugestoes .move.active {
+    background: #000000;
 }
 
 .main-content--user .user-sugestoes .move.move-right {
@@ -319,7 +331,7 @@ body {
 }
 
 .main-content--user .user-sugestoes:hover .move.move-right {
-    left: calc( 100% - 50px);
+    left: calc(100% - 50px);
 }
 
 .main-content--user .user-sugestoes .move.move-left {
